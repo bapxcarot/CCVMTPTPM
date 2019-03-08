@@ -33,7 +33,7 @@ namespace CAYCANHNT.Areas.admin.Controllers
 
         public ActionResult CountCart()
         {
-            var v = from t in _db.ORDERs
+            var v = from t in _db.CART_DETAIL
                     select t;
             return PartialView(v.ToList());
         }
